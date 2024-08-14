@@ -1,18 +1,119 @@
-{% extends "layouts/main.html" %}
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="#">DND</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+<div class="moj-primary-navigation__container">
+
+  <div class="moj-primary-navigation__nav">
+
+    <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+      <ul class="moj-primary-navigation__list">
+        <li class="moj-primary-navigation__item">
+          <a class="moj-primary-navigation__link" href="/world/brynderwold">World</a>
+        </li>
+
+        <li class="moj-primary-navigation__item">
+          <a class="moj-primary-navigation__link" href="/adventures/blight">Adventures</a>
+        </li>
+
+        <li class="moj-primary-navigation__item">
+          <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+        </li>
+
+        <li class="moj-primary-navigation__item">
+          <a class="moj-primary-navigation__link" href="/monsters/monsters">Monsters</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </div>
+</div>
+
+</div>
+
+<div class="hero-banner">
+  <div class="hero-text-box"> 
+    <h1 class="govuk-heading-xl hero-title">{{ serviceName }}</h1>
+    <p class="govuk-body-l hero-text">A guide to all the sessions and adventures being run</p>
+  </div>
+</div>
+
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full"> 
+    <h2 class="govuk-heading-l">Campaign rules</h2>
+    <p class="govuk-body">This campaign is a low fantasy, low magic, sword and sorcery theme. Magic is rare, 
+      dangerous and untrusted and characters and protagonists rather then heroes. World is gritty and dark, more 
+      dark age/ bronze age then medieval. The following rule changes apply in the campaign.</p> 
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
+    <h3 class="govuk-heading-m">Characters and protagonists rather then heroes</h2>
+    <p class="govuk-body">This campaign is a low fantasy, low magic, sword and sorcery theme. Magic is rare, 
+      dangerous and untrusted. World is gritty and dark, more dark age/ bronze age then medieval. The following 
+      points sum up the feeling of the campaign.
+    </p> 
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <h3 class="govuk-heading-m">Characters and protagonists rather then heroes</h2>
+    <p class="govuk-body">This campaign is a low fantasy, low magic, sword and sorcery theme. Magic is rare, 
+      dangerous and untrusted. World is gritty and dark, more dark age/ bronze age then medieval. The following 
+      points sum up the feeling of the campaign.
+    </p> 
   </div>
 </div>
+
+<hr class="govuk-!-margin-top-5 govuk-!-margin-bottom-5">
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-l">World</h2>
+    <p class="govuk-body">Contains a guide to the current campaign world, including places, NPCs and villians.</p>
+    <p class="govuk-body">Jump to <a href="/world/brynderwold" class="govuk-link">World</a>.</p>
+  </div>
+  <div class="govuk-grid-column-one-third"> 
+    <h2 class="govuk-heading-l">Adventures</h2>
+    <p class="govuk-body">Contains each adventure that has been run or planned to be run.</p> 
+    <p class="govuk-body">Jump to <a href="/adventures/blight" class="govuk-link">Adventures</a>.</p> 
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-l">Players</h2>
+    <p class="govuk-body">Contains each players character sheet and background. Also any notes on ongoing developments</p>
+    <p class="govuk-body">Jump to <a href="/players/player-one" class="govuk-link">Players</a>.</p>
+  </div>
+</div>
+
+<hr class="govuk-!-margin-top-5 govuk-!-margin-bottom-5">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third"> 
+    <h2 class="govuk-heading-l">Monsters</h2>
+    <p class="govuk-body">Monsters</p> 
+    <p class="govuk-body">Jump to <a href="/monsters/monsters" class="govuk-link">Monsters</a>.</p> 
+  </div>
+</div>
+
+<hr class="govuk-!-margin-top-5 govuk-!-margin-bottom-5">
 
 {% endblock %}
