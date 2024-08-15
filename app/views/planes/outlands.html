@@ -1,0 +1,143 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">DND</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/planes/outlands">Planes</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/adventures/blight">Adventures</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+  
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+        <h4 class="moj-side-navigation__title">Cities</h4>
+        <ul class="moj-side-navigation__list">
+          <li class="moj-side-navigation__item">
+            <a href="#sigil">Sigil</a>
+          </li>
+        </ul>
+      </nav>
+  
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+        
+        <span class="govuk-caption-xl">Planes</span>
+        <h1 class="govuk-heading-xl">
+          The Outlands
+        </h1>
+
+        <h2 class="govuk-heading-l">Cities</h2>
+
+        <button class="accordion" style="font-size : 20px; font-weight: bold;" id="sigil">Sigil</button>
+        <div class="panel">
+
+          <img src='/public/images/empty.png'  class="govuk-!-margin-bottom-5 govuk-!-padding-top-7" width="600">
+          <h3 class="govuk-heading-m">Description</h3>
+  
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Sigil Locations
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <p class="govuk-body">govuk-body</p>
+              </div>
+            </div>
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                    NPCs
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                <p class="govuk-body">govuk-body</p>
+              </div>
+            </div>
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                    Plot hooks
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                <p class="govuk-body">govuk-body</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+    </div>
+</div>
+
+{% endblock %}
