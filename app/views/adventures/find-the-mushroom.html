@@ -1,0 +1,273 @@
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block pageTitle %}
+{{ serviceName }} - jinja
+{% endblock %}
+
+{% block header %}
+<header class="moj-header" role="banner">
+
+  <div class="moj-header__container">
+
+    <div class="moj-header__logo">
+
+      <a class="moj-header__link moj-header__link--organisation-name" href="../index">DND</a>
+
+      <a class="moj-header__link moj-header__link--service-name" href="../index"> {{ serviceName }}</a>
+    </div>
+  </div>
+
+</header>
+<div class="moj-primary-navigation">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/planes/outlands">Planes</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/adventures/find-the-mushroom">Adventures</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/players/player-one">Players</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+
+    <nav class="moj-side-navigation" aria-label="Side navigation">
+      <h4 class="moj-side-navigation__title">Adventures</h4>
+      <ul class="moj-side-navigation__list">
+        <li class="moj-side-navigation__item">
+          <a href="find-the-mushroom">Find the mushroom!</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <span class="govuk-caption-xl">Adventures</span>
+    <h1 class="govuk-heading-xl">
+      Find the mushroom!
+    </h1>
+
+    <p class="govuk-body">A planescape re-skin of the first chapter of lost 
+      mines of Phandelvar. The players start in the hive region of Sigil. A myconoid 
+      cook has gone missing. The innkeeper of the inn the characters are staying at is 
+      worried and missing spice delivery. Asks PCs to investigate.</p> 
+
+    <h2 class="govuk-heading-l" id="1-blight">Story hook</h2>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>You are currently staying in the at the Hungry Dog, a small but pretty gastropub in the 
+        lower ward, working area of Sigil. The area rings with the constant 
+        sound of blacksmiths and industry. The pub is bright and colourful which 
+        is in stark contrast to the surroundings and the landlord, a very muscular 6ft 8 half orc who 
+        towers above the bar, making an amusing sight as his dries dishes. He 
+        has a black ponytail, is around 50 years old and is covered is scarification 
+        tattoos got from various battles and deeds. </b> </p> 
+
+      <p class="govuk-body"><b>His name is Pax and he also happens to be an excellant chef. 
+        The patrons are a mix of working men and women of all races, sizes, and species, grabbing food and drink between 
+        shifts. Once he has finished serving a tired looking halfing blacksmith he drops his 
+        dishcloth and comes over to your group, pulling chair out and joining you, a look of concern on his face.</b> </p> 
+    </div>
+
+    <div class="code-box">
+      <p class="govuk-body"><b><em>Got a job for you. Good friend of mine. Gone missing. Need someone 
+        to track them down. Don't have time myself. Free lodge and board for a fortnight if you find him and 
+        i'll put your names out there. Plus whatever they can offer. Interested?</em></b> </p> 
+    </div>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >Part 1 - Investigations</h2>
+
+    <p class="govuk-body">The target is Gyglid, a Myconoid who runs the 'Humungous Fungus' street food 
+      venue in the Hive on the Grease pit street. 
+    <p>
+
+    <h3 class="govuk-heading-m" >The Hive</h3>
+    
+    <div class="code-box">
+      <p class="govuk-body"><b>Neglected by the Dabus and the generosity of the other wards, 
+        the Hive has fallen into disrepair. Its buildings are lopsided hodgepodges of architectual 
+        styles and materials, their floors haphazrdly stacked atop one another to conserve space. 
+        The crooked high-rises darken cramped alleys, many of which are dead ends in more ways then one. 
+        Many residents of the city avoid the ward when possible, but those willing to risk the Hive 
+        can partake in its seedy establishments and hidden gems.</b>
+      </p> 
+
+      <p class="govuk-body"><b>As you walk the streets you see the bottle and jug, one of the Hive's 
+        most notorius drinkeries, rumoured to have a portal to a massive pit fitting arena out the 
+        back. Other sights of note is Fell's Tattoos, a tattoo parlour offering magical tattoos and 
+        the night market where less reputable wears from across the multi-verse can be bought.</b>
+      </p> 
+    </div>
+
+    <h3 class="govuk-heading-m govuk-!-margin-top-6" >The Grease pit</h3>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>The flavours of the multiverse converge at the Grease Pit, a noisy 
+        alley brimming with planar street food. Creatures come from far and wide to sample its 
+        delights or hawk them to hungry customers over the hubbub of the daily crowds.</b>
+      </p> 
+
+      <p class="govuk-body"><b>The Grease Pit offers patrons a taste of the Outer Planes. Deep 
+        fried meat skewers sizzle in bubbling oil traken from the battlefields of Acheron, 
+        marinating in rage and zeal. Meanwhile spicy dishes rise to infernal heats in a demon 
+        owned rotisseries, where the heat literally sear the taste buds of the uninitiated. 
+        Sobbing patrons cool their mouths on snow cones from the tops of the tallest mountain 
+        and then shred their tongues on face-puckering sour candies topped with caustic, 
+        gelatinous ooze. Portions range from bite sized nibbles to bottomless portal buffets 
+        worthy of a giants appetite.</b>
+      </p> 
+    </div>
+
+    <h3 class="govuk-heading-m govuk-!-margin-top-6">Outside the Humungous Fungus</h3>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li><p><b>On the left - 'The Suger and Spice'</b></p> 
+        <ol class="govuk-list govuk-list--number">
+          <li>This candy shop is owned by a fairie dragon named Pancake and an imp named Qribbig. 
+            The shop is a nicely painted diner, done up in rainbow colours and examples of the candies 
+            on offer on small tables out the front.</li>
+          <li>They both have a good relationship with Gyglid and are worried.</li>
+          <li>Knows that they haven't been seen for a week.</li>
+        </ol>
+      </li>
+      <li><p><b>On the right - 'Bob's Biggest Burgers'</b></p> 
+        <ol class="govuk-list govuk-list--number">
+          <li>This burger shack is owned by an overweight and greasy human man named Bob. The shack is 
+            run down and dirty, the grill thick with old fat and grease. The only thing on offer is a 
+            huge burger, driping with grease.</li>
+          <li>Bob's burgers are incredibly delicious despite appearences.</li>
+          <li>Uses some of the spices from Gyglid so is invested in his return. Not a good relationship as 
+            Gyglid portions out the spice in very small doses.  Wants the characters to get him a load in secret and 
+            will pay well for it.</li>
+          <li>Knows that Gyglid usually closes for 4 days a month for supply run.</li>
+          <li>Knows supply run is to his home village in the underdark</li>
+        </ol>
+      </li>
+      <li><p><b>Opposite - 'The Fire warden'</b></p> 
+        <ol class="govuk-list govuk-list--number">
+          <li>This candy shop is owned by a dragonborn female named Akra. The Fire Warden sells incredible hot curry 
+            and chilli. The Shack is well build out of slightly charred wood and the sign above has been writting in ash.</li>
+          <li>Akra is neutral about Gyglids disappearence. </li>
+        </ol>
+      </li>
+      <li><p><b>Card shark</b></p> 
+        <ol class="govuk-list govuk-list--number">
+          <li>A ragged looking red tiefling named Ooon has a table set up at the front of an alley opposite. On the table are a deck of </li>
+          <li>Betting game - tdb</li>
+          <li>If the PCS win will tell them that before Gyglid vanishes for a few days notices he is rooting around the garden of 
+            mushrooms growing at the base of the toadstool, as if looking for a very specific one. Always looks a bit shifty, looking 
+            around when he does this.</li>
+          <li>A large success means Ooon remembers the mushroom was small and bright orange.</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h3 class="govuk-heading-m govuk-!-margin-top-6">Inside the Humungous Fungus</h3>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>The Humungous Fungus is a building sized toadstool. The Stem 
+        has been hollowed out to contain the kitchen. Around the base of the stem thousands 
+        of small brightly coloured mushrooms sprout.</b>
+      </p> 
+
+      <p class="govuk-body"><b>You enter into the stem of the building sized toadstool. 
+        The air smells strongly of spices with an undertone of damp earth. The ground 
+        is slightly soft underfoot and the cupboards, cookers and cooking utensils are 
+        all arranged in a circle on the wall all around the stem.</b>
+      </p> 
+
+      <p class="govuk-body"><b>All the cupboards 
+        are grown straight from the wall of the giant mushroom and countless species 
+        of smaller and brightly coloured green and red mushrooms sprout from the bottom of the walls. 
+        In the centre ahead of you circular stairs go downwards into the ground and upwards into the bulb of the toadstool. The stairs 
+        are also grown strait from the mushroom and are covered in the small bright muhrooms 
+        and fungus.</b>
+      </p> 
+    </div>
+
+    <h3 class="govuk-heading-s">Upstairs</h3>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>Gyglids living quarters. A bed and various cubboards all grown from the walls and floor fill the circular room. </b>
+      </p> 
+    </div>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>A small mushroom box beside the bed is empty now but contains small pieces of an orange mushroom.</li>
+    </ul>
+
+    <h3 class="govuk-heading-s">Downstairs</h3>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>You enter into a roughly circular stone room, 20 foot in diameter. The walls are 
+        covered with bioluminescent mushrooms that give off enough purple tinged light to see easily. Many 
+        storage boxes, also made from hardened fungus lie around this room. They are filled with mushrooms, 
+        fungus and bags of spices and powders.  At the far end is 
+        a large chest also made of wood, the only storage box not made of hardened mushrooms.</b>
+      </p> 
+    </div>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Scrap marks on the floor in front of heavy wooden chest as its moved repeatedly</li>
+      <li>Wooden chest is empty and looks like it always has been</li>
+      <li>In the centre of the wall behind it is a orange stain, exactly the same colour as the mushrooms growing outside</li>
+      <li>Placing orange mushroom against the wall opens the portal</li>
+    </ul>
+
+    <hr class="govuk-!-margin-top-8 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l" >Part 2 - Through the portal</h2>
+    
+    <p class="govuk-body">The portal leads to the underdark, where Gyglids village is about 25 
+      miles away. Its a 10 feet drop through the portal.
+       The portal leads to a small cave with a passgae leading out. Gyglid goes first 
+       to show its safe.
+    <p>
+
+    <div class="code-box">
+      <p class="govuk-body"><b>Walking out of the small passageway you enter into the largest 
+        cave system you have ever seen, bigger then you even thought possible. The walls of the 
+        cave rise on either side 500 foot or more and the ceiling is covered by 30 foot long stalactites 
+        dripping to the floor below. The whole cavern is light by the same blue bioluminescent fungus 
+        as back in Sigil.</b>
+      </p> 
+
+      <p class="govuk-body"><b>Walking out of the small passageway you enter into the largest 
+        cave system you have ever seen, bigger then you even thought possible. The walls of the 
+        cave rise on either side 500 foot or more and the ceiling is covered by 30 foot long stalactites 
+        dripping to the floor below. The whole cavern is light by the same blue bioluminescent fungus 
+        as back in Sigil.</b>
+      </p> 
+    </div>
+
+
+  </div>
+</div>
+
+{% endblock %}
